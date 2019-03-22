@@ -28,7 +28,7 @@ public class UserDao {
 
     private Connection getConnection() throws ClassNotFoundException, SQLException {
         Class.forName("com.mysql.cj.jdbc.Driver");
-        return DriverManager.getConnection("jdbc:mysql://192.168.0.54/jeju?serverTimezone=UTC", "jeju", "jejupw");
+        return DriverManager.getConnection("jdbc:mysql://localhost/jeju?serverTimezone=UTC", "jeju", "jejupw");
     }
 
     public Long add(User user) throws ClassNotFoundException, SQLException {

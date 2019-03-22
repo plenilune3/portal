@@ -10,7 +10,7 @@ public class UserDaoTests {
     @Test
     public void testGet() throws SQLException, ClassNotFoundException {
         Long id = 1l;
-        String name = "허윤호";
+        String name = "강민규";
         String password = "1234";
         UserDao userDao = new UserDao();
         User user = userDao.get(id);
@@ -21,7 +21,7 @@ public class UserDaoTests {
 
     @Test
     public void testAdd() throws SQLException, ClassNotFoundException {
-        String name = "헐크";
+        String name = "알렉산드로";
         String password = "1111";
         User user = new User();
         user.setName(name);
